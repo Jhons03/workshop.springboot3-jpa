@@ -2,11 +2,11 @@ package com.digitcomart.curso.entities.enums;
 
 public enum OrderStatus {
 	
-	WAITING_PAYMENT(1),
-	PAID(2),
-	SHIPPED(3),
-	DELIVERED(4),
-	CANCELED(5);
+	AGUARDANDO_PAGAMENTO(1),
+	PAGO(2),
+	PREPARANDO(3),
+	ENVIADO(4),
+	CANCELADO(5);
 	
 	private int code;
 	
@@ -24,6 +24,6 @@ public enum OrderStatus {
 				return value;
 			}
 		}
-		throw new IllegalArgumentException("Invalid OrderStatus code");
+		throw new IllegalArgumentException("Codigo da ordem invalido.");
 	}
 }
